@@ -1,12 +1,9 @@
 <html>
 	<head>
-		<title>Vue.js Demo</title>
-		
+	<title>Vue.js Demo</title>
     <!-- Include Vue.js and Bootstrap -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.css">
-		<script type="text/javascript" 
-		src="https://unpkg.com/vue@2.5.13/dist/vue.js"
-		></script>
+	<script type="text/javascript" src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
 		
     <!-- Custom component template & declaration -->
     <script type="text/x-template" id="time-template">
@@ -34,29 +31,27 @@
 	</head>
 	<body>
 		
-    <!-- Template for our app -->
-    <div id="app" class="container">
-			<h1>
-        {{message}} 
-        <small>
-          Click Count : {{counter}} 
-          <button v-on:click="counter++">+</button>
-        </small>
-      </h1>
-			<time-display />
-		</div>
+  <!-- Template for our app -->
+  <div id="app" class="container">
+		<h1>
+      {{message}} 
+      <small>
+        Click Count : {{counter}} 
+        <button v-on:click="counter++">+</button>
+      </small>
+    </h1>
+		<time-display />
+	</div>
 
-    <!-- Our root Vue instance -->
-		<script type="text/javascript">
-			var app = new Vue({
-				el: '#app',
-				data: {
-					message: 'Hello !',
-          counter: 10
-				}
-			})
-		</script>
-	
-
+  <!-- Our root Vue instance -->
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello !',
+        counter: 10
+			}
+		})
+	</script>
   </body>
 </html>
